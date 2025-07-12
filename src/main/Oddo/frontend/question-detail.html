@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StackIt - Question Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: white;
+            padding: 15px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+            color: #0077cc;
+            text-decoration: none;
+        }
+
+        .breadcrumb {
+            padding: 10px 20px;
+            background: white;
+            border-bottom: 1px solid #e1e4e8;
+        }
+
+        .breadcrumb a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .question {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .question-title {
+            color: #0077cc;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .question-body {
+            color: #3b4045;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .tags {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            background-color: #e1ecf4;
+            color: #39739d;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+
+        .vote-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .vote-btn {
+            background: none;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .vote-btn:hover {
+            background: #f1f2f3;
+        }
+
+        .vote-count {
+            font-weight: bold;
+        }
+
+        .login-prompt {
+            background: #fff8e1;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .login-prompt a {
+            color: #0077cc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .answers {
+            margin-top: 30px;
+        }
+
+        .answer {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .answer-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .answer-body {
+            color: #3b4045;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .submit-answer {
+            margin-top: 30px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            min-height: 150px;
+            margin-bottom: 15px;
+        }
+
+        .submit-btn {
+            padding: 10px 20px;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .submit-btn:hover {
+            background-color: #0062a3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">StackIt</a>
+        <div>
+            <a href="#" style="text-decoration: none; color: #0077cc;">Log in</a>
+            <a href="#"
+                style="text-decoration: none; color: white; background: #0077cc; padding: 8px 16px; border-radius: 4px; margin-left: 10px;">Sign
+                up</a>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="#">Questions</a> > How to join 2 columns in a data set...
+    </div>
+
+    <div class="container">
+        <div class="question">
+            <h1 class="question-title">How to join 2 columns in a data set to make a separate column in SQL</h1>
+            <div class="question-body">
+                I do not know the code for it as I am a beginner. As an example what I need to do is like there is a
+                column 1 containing First name, and column 2 consists of last name I want a column to combine.
+            </div>
+            <div class="tags">
+                <span class="tag">sql</span>
+                <span class="tag">database</span>
+                <span class="tag">join</span>
+            </div>
+
+            <div class="vote-section">
+                <button class="vote-btn">▲ Upvote</button>
+                <span class="vote-count">12 votes</span>
+                <button class="vote-btn">▼ Downvote</button>
+            </div>
+
+            <div class="login-prompt">
+                You must <a href="#">log in</a> to vote. No multiple votes allowed.
+            </div>
+        </div>
+
+        <div class="answers">
+            <h2>Answers</h2>
+
+            <div class="answer">
+                <div class="answer-title">Answer 1</div>
+                <div class="answer-body">
+                    <p>The || Operator.</p>
+                    <p>The + Operator.</p>
+                    <p>The COD/CIT Function.</p>
+                </div>
+                <div class="vote-section">
+                    <button class="vote-btn">▲ Upvote</button>
+                    <span class="vote-count">8 votes</span>
+                    <button class="vote-btn">▼ Downvote</button>
+                </div>
+            </div>
+
+            <div class="answer">
+                <div class="answer-title">Answer 2</div>
+                <div class="answer-body">
+                    <p>Details</p>
+                </div>
+                <div class="vote-section">
+                    <button class="vote-btn">▲ Upvote</button>
+                    <span class="vote-count">3 votes</span>
+                    <button class="vote-btn">▼ Downvote</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="submit-answer">
+            <h2>Submit Your Answer</h2>
+            <textarea placeholder="Write your answer here..."></textarea>
+            <button class="submit-btn">Post Your Answer</button>
+        </div>
+    </div>
+
+    <script>
+        // Simple vote button functionality
+        document.querySelectorAll('.vote-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const loginPrompt = document.querySelector('.login-prompt');
+                if (loginPrompt) {
+                    loginPrompt.style.display = 'block';
+                    setTimeout(() => {
+                        loginPrompt.style.display = 'none';
+                    }, 3000);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
