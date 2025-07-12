@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | StackIt</title>
+
+  <!-- Bootstrap 5 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Optional Custom CSS -->
+  <style>
+    body {
+      background: #f3f4f6;
+    }
+    .box-area {
+      max-width: 900px;
+    }
+    .left-box {
+      background: #103cbe;
+      color: white;
+      text-align: center;
+    }
+    .left-box img {
+      max-width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="row border rounded-5 p-3 bg-white shadow box-area w-100">
+      
+      <!-- Left Box -->
+      <div class="col-md-6 rounded-4 d-flex flex-column justify-content-center align-items-center left-box p-4">
+        <img
+          src="https://static.vecteezy.com/system/resources/thumbnails/047/309/918/small_2x/verified-badge-profile-icon-png.png"
+          alt="verified-icon"
+          class="img-fluid mb-4"
+        />
+        <h2 class="fw-bold" style="font-family: 'Courier New', monospace;">
+          Be Verified
+        </h2>
+        <p class="text-white text-wrap" style="max-width: 16rem; font-family: 'Courier New', monospace;">
+          Ask Boldly. Learn Relentlessly. Contribute Bravely.
+        </p>
+      </div>
+
+      <!-- Right Box -->
+      <div class="col-md-6 d-flex align-items-center p-4">
+        <div class="w-100">
+          <h3 class="mb-3">Hello, again</h3>
+          <p class="text-muted mb-4">We're happy to have you back.</p>
+
+          <form>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control form-control-lg bg-light"
+                placeholder="Email address"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control form-control-lg bg-light"
+                placeholder="Password"
+                required
+              />
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="rememberMe" />
+                <label class="form-check-label" for="rememberMe">
+                  Remember Me
+                </label>
+              </div>
+              <a href="#" class="text-decoration-none small">Forgot Password?</a>
+            </div>
+
+            <div class="mb-3">
+              <button type="submit" class="btn btn-primary btn-lg w-100">
+                Login
+              </button>
+            </div>
+
+            <div class="mb-3">
+              <button type="button" class="btn btn-light btn-lg w-100">
+                <img
+                  src="https://e7.pngegg.com/pngimages/882/225/png-clipart-google-logo-google-logo-google-search-icon-google-text-logo.png"
+                  style="width: 20px"
+                  class="me-2"
+                  alt="Google Icon"
+                />
+                Sign in with Google
+              </button>
+            </div>
+
+            <div class="text-center">
+              <small>
+                Don’t have an account?
+                <a href="signup.html" class="text-primary text-decoration-none">
+                  Sign Up
+                </a>
+              </small>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
